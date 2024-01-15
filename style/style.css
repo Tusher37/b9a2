@@ -4,7 +4,7 @@
     font-family: 'Mulish', sans-serif;
 }
 
-/* Header Section */
+/* Header Section style*/
 .header{
     background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png');
     width: 1170px;
@@ -101,6 +101,64 @@
     background: #FF5400;
 }
 
+/* Popular Tour section  */
+.popular-tour-container{
+    margin-top: 100px;
+    width: 1170px;
+    height: 550px;
+    display: flex;
+}
+/* .popular-tour-details{
+    border: 2px solid #FF5400;
+} */
+.popular-tour-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.popular-tour-discription,
+.popular-tour-list,
+.popular-tour-discription-2
+{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 26px;
+}
+
+.popular-tour-btn{
+    width: 174px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.popular-tour-discription{
+    padding-right: 53px;
+}
+.popular-tour-list{
+    padding-right: 105px;
+}
+.popular-tour-discription-2{
+    padding-right: 100px;
+}
+.popular-tour-btn{
+    margin-right: 490px;
+}
+.popular-tour-img{
+    width: 540px;
+    border-radius: 16px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
 
 /* Responsive for small devides */
 @media screen and (max-width: 600px) {
@@ -108,10 +166,16 @@
         width: 335px;
         height: 483px;
         border-radius: 16px;
+        /* text-align: center;
+        padding-left: 50px;
+        position: absolute; */
     }
     .header::before {
         width: 335px;
         height: 483px;
+        /* text-align: center;
+        padding-left: 50px;
+        position: relative; */
         flex-shrink: 0;
         background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
     }
@@ -126,5 +190,29 @@
     .intro{
         font-size: 0.75rem;
         font-weight: 100;
+    }
+    .popular-tour-container{
+        flex-direction: column;
+        width: 335px;
+    }
+    .popular-tour-title
+    {
+        text-align: center;
+    }
+    .popular-tour-btn{
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+    .popular-tour-title,
+    .popular-tour-discription,
+    .popular-tour-list,
+    .popular-tour-discription-2
+    {
+        /* text-align: center; */
+        padding-left: 30px;
+    }
+    .popular-tour-img{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
