@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+.header{
+    background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png');
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);  
+}
+.header-discription{
+    text-align: center;
+    opacity: 0.9;
+}
+.where-go,
+.when,
+.select-type,
+.find-me
+{
+    display: flex;
+}
+.where-go-btn,
+.when-btn,
+.select-type-btn,
+.find-me-btn
+{
+    width: 174px;
+    height: 52px;
+    border: none;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    /* z-index: 2; */
+}
+.where-go-btn{
+    border-radius: 8px;
+}
+.when-btn,
+.select-type-btn
+{
+    border-radius: 8px 0px 0px 8px;
+}
+.find-me-btn{
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 0 8px 8px 0;
+    background-color: #FF5400;
+}
+.dropdown-img{
+    width: 30px;
+    height: 52px;
+    padding-right: 10px;
+    border-radius: 0 8px 8px 0;
+    background: #FFF;
+}
+.search-img{
+    width: 30px;
+    height: 52px;
+    padding-left: 10px;
+    border-radius: 8px 0px 0px 8px;
+    border: 2px solid #FF5400;
+    background: #FF5400;
+}
+.header-btn{
+    justify-content: center;
+    align-items: center;
+}
+.header-title{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 6.25rem;
+    line-height: normal;
+}
+.intro{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.header-btn{
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
