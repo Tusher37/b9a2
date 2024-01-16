@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
 
+/* Common style */
 *{
     font-family: 'Mulish', sans-serif;
+}
+.popular-tour-discription,
+.popular-tour-list,
+.popular-tour-discription-2,
+.service-discription
+{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 26px;
 }
 
 /* Header Section style*/
@@ -108,24 +120,14 @@
     height: 550px;
     display: flex;
 }
-/* .popular-tour-details{
-    border: 2px solid #FF5400;
-} */
+.popular-tour-details{
+    /* border: 2px solid #FF5400; */
+    width: 630px;
+}
 .popular-tour-title{
     color: #131318;
     font-size: 40px;
     font-weight: 800;
-}
-
-.popular-tour-discription,
-.popular-tour-list,
-.popular-tour-discription-2
-{
-    color: rgba(19, 19, 24, 0.70);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 24px;
-    line-height: 26px;
 }
 
 .popular-tour-btn{
@@ -133,7 +135,7 @@
     height: 52px;
     border: none;
     border-radius: 8px;
-    margin-top: 32px;
+    margin-top: 8px;
     background: #FF5400;
     color: #FFF;
     text-align: center;
@@ -156,12 +158,52 @@
 .popular-tour-img{
     width: 540px;
     border-radius: 16px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: url('/Images/Rectangle\ 4.png'), lightgray 50% / cover no-repeat;
+}
+
+/* Why Choose Us Section */
+.why-choose-us-container{
+    width: 1170px;
+    margin-top: 100px;
+    /* border: 2px solid #FF5400; */
+}
+.why-choose-us-title, .why-choose-us-description{
+    text-align: center;
+}
+.why-choose-us-features{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.hotel-service, .map-service, .price-tag-service{
+    width: 573px;
+    height: 284px;
+}
+.hotel-service{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.map-service{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.price-tag-service{
+    margin-top: 24px;
+    margin-left: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
 }
 
 
 /* Responsive for small devides */
 @media screen and (max-width: 600px) {
+    /* Header responsive */
     .header{
         width: 335px;
         height: 483px;
@@ -191,13 +233,17 @@
         font-size: 0.75rem;
         font-weight: 100;
     }
+    /* Popular-tour Responsive */
     .popular-tour-container{
+        margin-top: 0px;
         flex-direction: column;
         width: 335px;
     }
+    .popular-tour-details,
     .popular-tour-title
     {
         text-align: center;
+        width: 335px;
     }
     .popular-tour-btn{
         margin-left: 60px;
@@ -214,5 +260,23 @@
     .popular-tour-img{
         width: 100%;
         margin-bottom: 20px;
+    }
+    /* Why Choose Us responsive */
+    .why-choose-us-container{
+        margin-top: 900px;
+        width: 335px;
+    }
+    .why-choose-us-features{
+        grid-template-columns: 1fr;
+    }
+    .hotel-service,.map-service{
+        height: 289px;
+    }
+    .hotel-service, .map-service, .price-tag-service{
+        width: 335px;
+        height: 284px;
+    }
+    .price-tag-service{
+        margin: 0;
     }
 }
