@@ -401,13 +401,13 @@
 .footer-section{
     /* border: 2px solid #FF5400; */
     width: 1175px;
-    height: 502px;
+    height: 550px;
     background: rgba(19, 19, 24, 0.05);
 }
 .footer-title-section{
     display: flex;
     justify-content: center;
-    margin-top: 110px;
+    padding-top: 110px;
 }
 .travel-color{
     color: #FF5400;
