@@ -7,6 +7,7 @@
 .popular-tour-discription,
 .popular-tour-list,
 .popular-tour-discription-2,
+.destination-discription,
 .service-discription,
 .newsletter-discription,
 .footer-discription
@@ -16,6 +17,12 @@
     font-weight: 400;
     margin-top: 24px;
     line-height: 26px;
+}
+.popular-tour-title,
+.destination-header-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 /* Header Section style*/
@@ -126,12 +133,6 @@
     /* border: 2px solid #FF5400; */
     width: 630px;
 }
-.popular-tour-title{
-    color: #131318;
-    font-size: 40px;
-    font-weight: 800;
-}
-
 .popular-tour-btn{
     width: 174px;
     height: 52px;
@@ -163,6 +164,115 @@
     background: url('/Images/Rectangle\ 4.png'), lightgray 50% / cover no-repeat;
 }
 
+/* Choose Your Destination Section */
+.choose-your-destination-container{
+    /* border: 2px solid #FF5400; */
+    width: 1175px;
+}
+.destination-header-title,
+.destination-discription{
+    text-align: center;
+    margin-top: 50px;
+}
+.destination-grid-container{
+    margin-top: 45px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+  }
+  /* .destination-grid-container > div {
+    display: flex;
+  } */
+  .destination-grid-container > div {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destination-grid-container img {
+    width: 100%;
+    /* height: auto;
+    display: block; */
+  }
+.image-text-1 {
+    position: relative;
+    bottom: 180px;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.image-text-2 {
+    position: relative;
+    bottom: 180px;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.image-text-3 {
+    position: relative;
+    bottom: 180px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.image-text-4 {
+    position: relative;
+    bottom: 180px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.image-text-5 {
+    position: relative;
+    bottom: 180px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.image-text-6 {
+    position: relative;
+    bottom: 180px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.image-text-7 {
+    position: relative;
+    bottom: 180px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+  /* First Row: 2 Images */
+  .row1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Second Row: 3 Images */
+  .row2 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Third Row: 2 Images */
+  .row3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .destination-imgages{
+    /* fill: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat; */
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+  
 /* Why Choose Us Section */
 .why-choose-us-container{
     width: 1170px;
@@ -289,9 +399,10 @@
 
 /* Footer section */
 .footer-section{
-    border: 2px solid #FF5400;
+    /* border: 2px solid #FF5400; */
     width: 1175px;
     height: 502px;
+    background: rgba(19, 19, 24, 0.05);
 }
 .footer-title-section{
     display: flex;
@@ -390,9 +501,44 @@
         width: 100%;
         margin-bottom: 20px;
     }
+    /* Choose Your Destination Section Responsive */
+    .choose-your-destination-container{
+        width: 350px;
+        margin-top: 900px;
+    }
+    .choose-your-destination-container h1,
+    .choose-your-destination-container p{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .destination-grid-container > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row1, .row2, .row3 {
+        grid-template-columns: 1fr;
+    }
+    .destination-imgages{
+        width: 100%;
+        height: 176px;
+        border-radius: 16px;
+    }
+    .image-text-1, 
+    .image-text-2,
+    .image-text-3,
+    .image-text-4,
+    .image-text-5,
+    .image-text-6,
+    .image-text-7 
+    {
+        position: relative;
+        bottom: 120px;
+        color: #fff;
+        text-align: center;
+    }
     /* Why Choose Us responsive */
     .why-choose-us-container{
-        margin-top: 900px;
+        margin-top: 5px;
         width: 335px;
     }
     .why-choose-us-features{
