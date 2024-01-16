@@ -205,11 +205,12 @@
 .news-letter-container{
     margin-top: 100px;
     width: 1175px;
-    border: 1px solid #FF5400;
+    /* border: 2px solid #FF5400; */
 }
 .newsletter-content{
     display: flex;
     gap: 24px;
+    /* border: 1px solid #FF5400; */
 }
 .newsletter-title{
     margin-left: 40px;
@@ -251,7 +252,7 @@
     font-weight: 400;
 }
 .newsletter-btn{
-    width: 393px;
+    width: 415px;
     height: 52px;
     border: none;
     border-radius: 8px;
@@ -365,5 +366,45 @@
     }
     .price-tag-service{
         margin: 0;
+    }
+    /* Newsletter responsive */
+    .news-letter-container,.newsletter-content{
+        flex-direction: column;
+        width: 350px;
+    }
+    .newsletter-discription{
+        margin-top: 10px;
+        padding: 5px 43px 5px 40px;
+    }
+    .news-letter-form{
+        width: 350px;
+    }
+    .line, .input-class, .newsletter-btn{
+        width: 280px;
+    }
+    .newsletter-content img{
+        width: 100%;
+    }
+    .newsletter-discount-btn{
+        width: 170px;
+        height: 95px;
+        transform: rotate(-19.628deg);
+        border: none;
+        border-radius: 10px;
+        background: #FF5400;
+        position: relative;
+        bottom: 120px;
+        left: 170px;
+    }
+    .web-link{
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .discount-percent{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 400;
     }
 }
