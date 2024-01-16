@@ -8,7 +8,8 @@
 .popular-tour-list,
 .popular-tour-discription-2,
 .service-discription,
-.newsletter-discription
+.newsletter-discription,
+.footer-discription
 {
     color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
@@ -297,6 +298,9 @@
     justify-content: center;
     margin-top: 110px;
 }
+.travel-color{
+    color: #FF5400;
+}
 .footer-title-section img, .footer-title-section h1{
     margin: 0 8px 0 8px;
 }
@@ -321,6 +325,7 @@
 .rights{
     text-align: center;
 } 
+
 
 
 
@@ -443,6 +448,7 @@
         font-size: 20px;
         font-weight: 400;
     }
+    /* Footer Section */
     .footer-section{
         width: 350px;
         height: 502px;
