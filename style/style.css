@@ -443,4 +443,17 @@
         font-size: 20px;
         font-weight: 400;
     }
+    .footer-section{
+        width: 350px;
+        height: 502px;
+    }
+    .footer-title-section{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .social{
+        margin-left: 25%;
+        padding-top: 30px;
+    }
 }
