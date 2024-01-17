@@ -704,8 +704,18 @@ nav a{
         padding-top: 30px;
     }
     #footer-line{
-        width: 335px;
-    }  
+        width: 300px;
+        left: 25px;
+    }
+    /* #footer-line{
+        width: 700px;
+        height: 1.5px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: rgba(0, 0, 0, 0.152);
+        position: relative;
+        left: 250px;
+    }     */
 }
 /* Responsive for large devides */
 @media only screen and (min-width: 601px){
